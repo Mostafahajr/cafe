@@ -1,0 +1,97 @@
+/* Ensure full-height and full-width for body and html */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../../images/banner/carousel-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    /* Add some padding around the container */
+}
+
+.login-container {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(246, 246, 246, 0.973);
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Darken background for readability */
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: azure;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    /* Adjusted for better fit */
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container input[type="email"],
+.login-container input[type="file"],
+.login-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    /* Ensure input fields are readable */
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+.login-container .error {
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.login-container a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}

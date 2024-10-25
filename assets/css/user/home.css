@@ -1,0 +1,493 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+}
+
+
+/* Style for the logo */
+
+.navbar-brand img {
+    max-height: 70px;
+}
+
+
+/* Center the navigation links */
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+
+/* Style for the dark mode toggle button */
+
+#darkModeToggle {
+    font-size: 1.25rem;
+}
+
+
+/* Style for the cart button */
+
+#cartButton {
+    font-size: 1.25rem;
+}
+
+.form-control {
+    border-radius: 0.25rem;
+    /* Slightly rounded corners for the input */
+}
+
+.cart-button-container .btn {
+    background-color: #007bff;
+    /* Primary button color */
+    border: none;
+    /* Remove default border */
+}
+
+.cart-button-container .btn:hover {
+    background-color: #0056b3;
+    /* Button hover color */
+}
+
+.dropdown-menu {
+    min-width: 10rem;
+    /* Set minimum width for dropdown */
+}
+
+.dropdown-item {
+    color: #000;
+    /* Dropdown item color */
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+    /* Background color on hover */
+}
+
+.form-check-input:checked {
+    background-color: #007bff;
+    /* Dark mode toggle color */
+}
+
+.content {
+    height: 100%;
+    background: url('') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-nav a {
+    color: white !important;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.counter-section {
+    background-color: #f8f9fa;
+    /* Light background for the counter section */
+}
+
+.category-section {
+    background-color: #ffffff;
+    /* White background for the category section */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Apply the animation to the carousel-caption */
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+    /* Adjust duration and easing as needed */
+}
+
+.carousel-caption h2,
+.carousel-caption h1 {
+    margin-bottom: 0.5rem;
+    /* Adjust as needed */
+    opacity: 0;
+    /* Start hidden */
+    animation: fadeInUp 1s ease-out forwards;
+    /* Ensure animation is applied */
+}
+
+.carousel-caption h1 {
+    color: rgb(213, 182, 9);
+}
+
+
+/* Delay each heading’s animation to create a sequential effect */
+
+.carousel-caption h2:first-of-type {
+    animation-delay: 0.5s;
+}
+
+.carousel-caption h1 {
+    animation-delay: 1s;
+}
+
+.carousel-caption h2:last-of-type {
+    animation-delay: 1.5s;
+}
+
+.category-section {
+    position: relative;
+    padding: 3rem 0;
+    background-color: antiquewhite;
+}
+
+.section-title {
+    font-size: 2rem;
+    /* Adjust font size as needed */
+    font-weight: bold;
+    color: #23a708;
+    /* Adjust text color as needed */
+    margin: 0;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.category-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: .375rem;
+    box-shadow: 0 4px 8px rgba(94, 3, 3, 0.767);
+    margin-bottom: 1rem;
+    height: 300px;
+    width: 300px;
+}
+
+.category-card img {
+    width: 240px;
+    height: 290px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover img {
+    transform: scale(1.1);
+}
+
+.category-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    font-size: 1.25rem;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.category-card:hover .category-name {
+    transform: translateY(0);
+}
+
+
+/* Flexbox to ensure categories fit in a single row */
+
+.category-section .row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.category-section .col-md-4 {
+    flex: 0 0 auto;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.product-card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.product-card .card-body {
+    padding: 15px;
+}
+
+.reservation-container {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(246, 246, 246, 0.973);
+    width: 400px;
+    background-image: url("../assets/images/banner/");
+    /* Replace with your image path */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blur: 10px;
+    /* Optional: adds a blur effect to the background image */
+    color: white;
+    /* Ensures text is visible on top of the image */
+}
+
+.reservation-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: azure;
+}
+
+.reservation-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    /* Adjusted for better readability */
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+.reservation-container input,
+.reservation-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.reservation-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+}
+
+.reservation-container button:hover {
+    background-color: #0056b3;
+}
+
+.reservation-container .error {
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.reservation-container a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.reservation-container a:hover {
+    text-decoration: underline;
+}
+
+.modal-dialog-fullscreen {
+    max-width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.modal-content {
+    height: 100%;
+    border-radius: 0;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+    height: auto;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.opinion-slider-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.opinion-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    flex-direction: column;
+    /* Stack items vertically */
+}
+
+.opinion-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    /* Optional: add a border between items */
+}
+
+.photo-container {
+    flex: 0 0 auto;
+    width: 120px;
+    /* Fixed width for images */
+    text-align: center;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    /* Optional: adds a border around the image */
+}
+
+.feedback-container {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.feedback-banner {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional: adds a subtle shadow */
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #0056b3;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.footer-background {
+    width: 100%;
+    background-image: url('../assets/images/banner/115c224b-fb13-4b20-b9bd-526d54ae9666.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    text-align: center;
+    font-style: oblique;
+}
+
+.footer-background h5 {
+    color: blue;
+}
+
+.footer-background .nav-link {
+    color: blak;
+    /* Ensure nav links are visible on the background */
+}
+
+.footer-background .btn-primary {
+    background-color: #23a708;
+    /* Adjust the button color if needed */
+    border: solid;
+}
+
+.footer-background .border-top {
+    border-color: rgba(255, 255, 255, 0.1);
+    /* Adjust the border color for better visibility */
+}
